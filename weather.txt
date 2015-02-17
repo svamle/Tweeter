@@ -1,0 +1,1 @@
+http://www8.tfe.umu.se/WeatherWebService2012/Service.asmx/Aktuellavarden
