@@ -1,0 +1,12 @@
+
+
+setInterval(function() {
+	
+console.log("hej")
+
+
+
+
+
+
+}, 1000)

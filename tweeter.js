@@ -17,8 +17,6 @@ var minutes = date.getMinutes()
 var hashtag = [];
 
 
-
-
 //Skapa tidssträng
 if(minutes<10)
 {
@@ -29,9 +27,10 @@ else
 	var time = hour +':'+ minutes
 }
 
-mood = Math.random()*100;
+//mood = Math.random()*100;
 
 
+function tweetFunc(mood, yourCallBack){
 
 if(mood>50){
 	var path ='./happy.txt';
@@ -62,10 +61,13 @@ message = tweetSplit[Math.floor(Math.random()*tweetSplit.length)].slice(0,-1)
 tweet = announcement + message + hashtag
 
 
-console.log(tweet)
+//console.log(tweet)
 //Hashtag creator
 
+yourCallBack(null, tweet)
+}
 
+module.exports = tweetFunc;
 
 
 
