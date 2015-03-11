@@ -1,5 +1,7 @@
 var fs = require('fs');
 
+ var satan = 1;
+
 var hashtagList = fs.readFileSync('./hashtag.txt', "utf-8"); //Hämta hashtags
 var hashtagSplit = hashtagList.split('\n');
 
